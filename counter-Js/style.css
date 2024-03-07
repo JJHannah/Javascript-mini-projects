@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+  font-size: 10em;
+  text-align: center;
+}
+.container {
+  text-align: center;
+  padding: 1em 2em;
+}
+button {
+  padding: 1em 2em;
+  font-size: 1em;
+  color: white;
+  background-color: #38bdf8;
+  border-radius: 10px;
+  font-weight: bold;
+  margin: 0.5em;
+  text-transform: capitalize;
+  transition: 0.25 ease;
+}
+button:hover {
+  background-color: #075985;
+}
