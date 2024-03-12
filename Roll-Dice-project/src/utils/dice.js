@@ -6,13 +6,7 @@ const diceRolls = () => {
   const image = [];
   const value = [];
 
-  btnDice.addEventListener('click',rollerDice{
-
-
-
-  })
-
-  
+  btnDice.addEventListener("click", rollerDice);
 };
 
 export default diceRolls;
