@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+h1 {
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+label {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+input {
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+button {
+  padding: 0.9rem;
+  margin-left: 0.8rem;
+  background-color: hsl(180, 48%, 41%);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: hsl(180, 39%, 28%);
+}
