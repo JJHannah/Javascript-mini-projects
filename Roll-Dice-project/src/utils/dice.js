@@ -13,7 +13,9 @@ const diceRolls = () => {
       const numRandom = Math.floor(Math.random() * 6) + 1;
       // console.log(numRandom);
       value.push(numRandom);
-      image.push(`<img src="images/${numRandom}.png alt= "dice${numRandom} ">`);
+      image.push(
+        `<img src="public/images/${numRandom}.png" alt= "dice${numRandom} ">`
+      );
 
       numResult.textContent = `dice : ${value.join(", ")}`;
       imageResult.innerHTML = image.join("");

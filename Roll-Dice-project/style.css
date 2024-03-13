@@ -38,3 +38,15 @@ button {
 button:hover {
   background-color: hsl(180, 39%, 28%);
 }
+.numResult {
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.imageResult img {
+  width: 100px;
+  height: 100px;
+  margin: 1rem;
+}
