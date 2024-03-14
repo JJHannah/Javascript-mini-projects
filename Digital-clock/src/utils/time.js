@@ -3,7 +3,7 @@ const timeUpdate = () => {
 
   function timer() {
     const currentDate = new Date();
-    const timestap = currentDate.getTime();
+    const timestap = currentDate.getHours();
     futureTime.textContent = timestap;
   }
   timer();
