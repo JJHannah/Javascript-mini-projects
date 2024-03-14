@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 body {
+  background-image: url("./public/pic1.jpg");
   display: flex;
   text-align: center;
   justify-content: center;
