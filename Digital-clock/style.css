@@ -4,11 +4,14 @@
   box-sizing: border-box;
 }
 body {
-  /* background-image: url("./public/pic1.jpg"); */
-
+  background-image: url("/pic2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   display: flex;
   text-align: center;
   justify-content: center;
+  color: white;
 }
 .container {
   margin-top: 2rem;
@@ -16,6 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* border: 1px solid red; */
 }
 
 h1 {
@@ -26,4 +30,6 @@ h1 {
 p {
   font-size: 8rem;
   font-family: "Bespoke Stencil", sans-serif;
+  /* background-color: hsl(212, 11%, 66%); */
+  font-weight: bold;
 }

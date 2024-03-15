@@ -9,8 +9,8 @@ const timeUpdate = () => {
     hours = hours.toString().padStart(2, 0);
     const minutes = current.getMinutes().toString().padStart(2, 0);
     const seconds = current.getSeconds().toString().padStart(2, 0);
-    const timestap = `${hours}:${minutes}:${seconds} ${time}`;
-    futureTime.textContent = timestap;
+    const timeStamp = `${hours}:${minutes}:${seconds} ${time}`;
+    futureTime.textContent = timeStamp;
   }
   timer();
   setInterval(timer, 1000);
