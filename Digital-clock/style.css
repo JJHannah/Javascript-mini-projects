@@ -21,7 +21,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* border: 1px solid red; */
 }
 
 h1 {
@@ -32,6 +31,9 @@ h1 {
 p {
   font-size: 8rem;
   font-family: "Bespoke Stencil", sans-serif;
-  /* background-color: hsl(212, 11%, 66%); */
+
   font-weight: bold;
+  backdrop-filter: blur(5px);
+  background-color: hsla(0, 0%, 100%, 0.137);
+  width: 100%;
 }
