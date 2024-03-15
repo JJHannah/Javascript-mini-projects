@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url("./public/pic1.jpg");
+  /* background-image: url("./public/pic1.jpg"); */
+
   display: flex;
   text-align: center;
   justify-content: center;
@@ -19,7 +20,8 @@ body {
 
 h1 {
   text-transform: capitalize;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-family: monospace;
 }
 p {
   font-size: 8rem;

@@ -3,10 +3,13 @@ const timeUpdate = () => {
 
   function timer() {
     const current = new Date();
-    const hours = current.getHours();
-    const minutes = current.getMinutes();
-    const seconds = current.getSeconds();
-    const timestap = `${hours}:${minutes}:${seconds}`;
+    let hours = current.getHours();
+    const time = hours >= 12 ? "PM" : "AM";
+    hours = hours % 12 || 12;
+    hours = hours.toString().padStart(2, 0);
+    const minutes = current.getMinutes().toString().padStart(2, 0);
+    const seconds = current.getSeconds().toString().padStart(2, 0);
+    const timestap = `${hours}:${minutes}:${seconds} ${time}`;
     futureTime.textContent = timestap;
   }
   timer();
