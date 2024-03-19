@@ -9,16 +9,15 @@ body {
   height: 100vh;
 }
 .container {
-  height: 50vh;
+  height: 70vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 8rem;
 }
 button {
   width: 20%;
-  margin-top: 5rem;
   padding: 0.5em 1.3em;
   border-radius: 10px;
   text-align: center;
