@@ -3,6 +3,31 @@
   padding: 0px;
   box-sizing: border-box;
 }
+body {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  border: 1px solid red;
+  margin-top: 1rem;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background-color: aqua;
+}
+input {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1.5rem 2rem;
+}
+
 button {
-  padding: 2rem;
+  padding: 1.5rem;
+  font-family: monospace;
+  font-size: 1.5em;
 }
