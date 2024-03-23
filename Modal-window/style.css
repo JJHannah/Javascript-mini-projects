@@ -29,7 +29,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background-color: hsla(348, 100%, 54%, 0.877);
+  background-color: hsl(348, 89%, 25%);
 }
 .close-modal {
   position: absolute;
