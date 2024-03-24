@@ -1,16 +1,21 @@
 const calculator = () => {
-  const btn = document.querySelectorAll(".btnClick");
-  const input = document.querySelector(".input");
-  const multiply = document.querySelector(".btnMultiply");
-  const subtract = document.querySelector("btnSubtract");
-  const add = document.querySelector(".btnAdd");
-  const divide = document.querySelector(".btnDivide");
-  const calculate = document.querySelector(".btnClculate");
-  const clear = document.querySelector(".btnClear");
+  let currentDisplay = "";
+  let resultDisplay = true;
 
-  btn.addEventListener("click", appendToDisplay);
+  function appendToDisplay(input) {
+    if (currentDisplay === "" || resultDisplay) {
+      currentDisplay = value;
+    } else {
+      currentDisplay += value;
+    }
+    resultDisplay = true;
+    updateDisplay();
+  }
 
-  function appendToDisplay(input) {}
+  function updateDisplay() {
+    const displayElement = document.querySelector(".input");
+    displayElement.textContent = currentDisplay;
+  }
 };
 
 export default calculator;
