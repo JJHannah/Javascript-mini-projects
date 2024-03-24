@@ -10,9 +10,7 @@ const calculator = () => {
 
   btn.addEventListener("click", appendToDisplay);
 
-  function appendToDisplay() {
-    let calculation = "";
-  }
+  function appendToDisplay(input) {}
 };
 
 export default calculator;
