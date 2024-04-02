@@ -1,6 +1,6 @@
 const calculator = () => {
   let currentDisplay = "";
-  let resultDisplay = true;
+  let resultDisplay = false;
 
   function appendToDisplay(input) {
     if (currentDisplay === "" || resultDisplay) {
@@ -8,7 +8,7 @@ const calculator = () => {
     } else {
       currentDisplay += value;
     }
-    resultDisplay = true;
+    resultDisplay = false;
     updateDisplay();
   }
 
