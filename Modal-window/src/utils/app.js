@@ -1,7 +1,14 @@
 const app = () => {
-  const showModal = document.querySelectorAll(".show-modal");
-  const closeModal = document.querySelector(".close-modal");
-  const modal = document.getElementById("modal")
+  const openModal = document.getElementById("openModal");
+  const closeModal = document.getElementById("closeModal");
+  const modal = document.getElementById("modal");
+
+  openModal.addEventListener("click", () => {
+    modal.classList.add("open");
+  });
+  closeModal.addEventListener("click", () => {
+    modal.classList.remove("open");
+  });
 };
 
 export default app;

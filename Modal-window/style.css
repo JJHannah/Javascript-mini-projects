@@ -5,4 +5,48 @@
 }
 body {
   font-family: monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 1.5em;
+}
+button {
+  margin-top: 5rem;
+  padding: 0.8rem 1rem;
+  font-family: monospace;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.5em;
+  background: none;
+}
+.modal {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  transition: hsla(0, 0%, 0%, 0.589);
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal.open {
+  opacity: 1;
+  z-index: 999;
+}
+.inner-Modal {
+  background-color: white;
+  width: 380px;
+}
+.inner-Modal h2 {
+  text-align: center;
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+.inner-Modal p {
+  line-height: 1.5rem;
+  text-align: center;
+  padding: 0.5rem;
 }
