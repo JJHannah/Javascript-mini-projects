@@ -1,6 +1,6 @@
 const app = () => {
-  const openModal = document.getElementById("openModal");
-  const closeModal = document.getElementById("closeModal");
+  const openModal = document.querySelector(".openModal");
+  const closeModal = document.querySelector(".closeModal");
   const modal = document.getElementById("modal");
 
   openModal.addEventListener("click", () => {

@@ -10,17 +10,23 @@ body {
   justify-content: center;
   font-family: monospace;
   font-size: 1.5em;
+  min-height: 100vh;
 }
 button {
-  margin-top: 5rem;
+  margin-top: 2rem;
   padding: 0.8rem 1rem;
   font-family: monospace;
   text-transform: capitalize;
   font-weight: 500;
   font-size: 1.5em;
   background: none;
+  border-radius: 20px;
+}
+button:active {
+  opacity: 0.8;
 }
 .modal {
+  background-color: hsla(0, 0%, 0%, 0.055);
   top: 0;
   left: 0;
   right: 0;
@@ -31,6 +37,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
 }
 .modal.open {
   opacity: 1;
@@ -39,6 +46,10 @@ button {
 .inner-Modal {
   background-color: white;
   width: 380px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1rem;
+  /* opacity: 0; */
 }
 .inner-Modal h2 {
   text-align: center;
