@@ -16,9 +16,41 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   height: 50vh;
   margin: 0 auto;
   gap: 1rem;
-  width: 60%;
+  width: 800px;
+}
+#toggle {
+  display: none;
+}
+label {
+  /* border: 2px solid red; */
+  width: 120px;
+  height: 50px;
+  border-radius: 30px;
+  display: inline;
+  position: relative;
+  cursor: pointer;
+  background-color: #ccc;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+label::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  top: 14px;
+  left: 14px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transition: tranform 0.3s;
+}
+#toggle:checked + label {
+  background-color: #111827;
+}
+#toggle:checked + label::before {
+  transform: translateX(70px);
 }
