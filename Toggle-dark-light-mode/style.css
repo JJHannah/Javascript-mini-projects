@@ -26,7 +26,6 @@ body {
   display: none;
 }
 label {
-  /* border: 2px solid red; */
   width: 120px;
   height: 50px;
   border-radius: 30px;
@@ -46,11 +45,15 @@ label::before {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  transition: tranform 0.3s;
+  transition: tranform 0.5s;
 }
 #toggle:checked + label {
   background-color: #111827;
 }
 #toggle:checked + label::before {
   transform: translateX(70px);
+}
+.dark-mode {
+  background-color: hsl(229, 84%, 5%);
+  color: white;
 }
