@@ -62,7 +62,6 @@ hr {
 .content > p {
   position: relative;
   opacity: 0;
-
   height: 1;
   transition: 0.5s;
   margin: 0.5rem;
