@@ -19,6 +19,7 @@ body {
   margin: 0 auto;
   background-color: white;
   border: 10px;
+  position: relative;
 }
 .accordion__body {
   width: 100%;
@@ -46,4 +47,18 @@ body {
 }
 .content p::before {
   content: "-";
+}
+.label::before {
+  content: "+";
+  position: absolute;
+  margin-top: 1rem;
+  right: 60px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+.accordion__body .content > p {
+  position: relative;
+  background: white;
+  height: 1;
+  transition: 0.5s;
 }
