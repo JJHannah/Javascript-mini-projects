@@ -59,9 +59,13 @@ hr {
   font-size: 30px;
   transform: translateY(-50%);
 }
-.accordion__body .content > p {
+.content > p {
   position: relative;
-  background: white;
+  opacity: 0;
+
   height: 1;
   transition: 0.5s;
+  margin: 0.5rem;
+  width: 100%;
+  text-align: justify;
 }
