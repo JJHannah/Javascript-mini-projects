@@ -7,64 +7,87 @@ html {
   font-family: monospace;
 }
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #0284c7;
-  height: 100vh;
 }
 .container {
-  width: 60%;
-  height: 550px;
-  margin: 0 auto;
   background-color: white;
-  border: 10px;
-  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-top: 5rem;
+  width: 80%;
+  /* border: 3px solid green; */
+  border-radius: 10px;
 }
 .accordion__body {
-  width: 100%;
-  padding: 1rem 1.5rem;
-  font-size: 1em;
-  height: 80vh;
-  position: relative;
+  /* border: 3px solid red; */
+  max-width: 100%;
+  height: 500px;
+  margin: 0.2rem;
+  padding: 1rem;
 }
-.accordion h1 {
-  margin-bottom: 0.9rem;
-  text-align: center;
-  text-transform: capitalize;
+.accordion__content {
+  margin-top: 1rem;
 }
-.accordion__items {
-  padding: 0.5rem 1rem;
+.accordion__content p {
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
-.accordion__items .label {
-  font-size: 1.5em;
-  text-transform: capitalize;
-  margin-bottom: 1rem;
-}
-
-.accordion__items .content > p {
-  font-size: 1.5em;
-}
-.content p::before {
+.accordion__content p::before {
   content: "-";
 }
-hr {
-  border: 1px solid grey;
+/* media query
+/* media query
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+    max-height: 600px;
+  }
+
+  .accordion__content p {
+    font-size: 1rem;
+    font-weight: light;
+  }
 }
-.label::before {
-  content: "+";
-  position: absolute;
-  margin-top: 1rem;
-  right: 60px;
-  font-size: 30px;
-  transform: translateY(-50%);
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+    max-height: 700px;
+  }
+
+  .accordion__content p {
+    font-size: 1.3em;
+    font-weight: light;
+  }
 }
-.content > p {
-  position: relative;
-  opacity: 0;
-  height: 1;
-  transition: 0.5s;
-  margin: 0.5rem;
-  width: 100%;
-  text-align: justify;
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 780px;
+    max-height: 700px;
+  }
+  .accordion__content p {
+    font-size: 1.4em;
+    font-weight: light;
+  }
 }
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    max-height: 600px;
+  }
+  .accordion__content p {
+    font-size: 1.4em;
+    font-weight: light;
+  }
+}
+/* xl */
+/* @media (min-width: 1280px) {
+} */
+/* 2xl*/
+/* @media (min-width: 1536px) {
+} */
