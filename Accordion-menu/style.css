@@ -7,7 +7,7 @@ html {
   font-family: monospace;
 }
 body {
-  background-color: #0284c7;
+  background-color: #0d9488;
 }
 .container {
   background-color: white;
@@ -17,25 +17,47 @@ body {
   padding-right: 0.5em;
   margin-top: 5rem;
   width: 80%;
-  /* border: 3px solid green; */
   border-radius: 10px;
 }
 .accordion__body {
-  /* border: 3px solid red; */
   max-width: 100%;
   height: 500px;
   margin: 0.2rem;
   padding: 1rem;
+  position: relative;
+}
+.accordion__body h1 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+.accordion__body hr {
+  border: 1.2px solid grey;
+  margin-bottom: 1.2rem;
 }
 .accordion__content {
   margin-top: 1rem;
+  position: relative;
+}
+.accordion__content h2 {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
 }
 .accordion__content p {
   font-size: 1.5rem;
   line-height: 1.5;
+  text-align: justify;
 }
 .accordion__content p::before {
   content: "-";
+}
+.accordion__content p::after {
+  content: "+";
+  margin-top: 1rem;
+  position: absolute;
+  top: -20px;
+  right: 50px;
+  font-size: 2rem;
 }
 /* media query
 /* media query
@@ -43,23 +65,29 @@ body {
 @media (min-width: 475px) {
   .container {
     max-width: 475px;
-    max-height: 600px;
+    height: 515px;
   }
-
+  .accordion__body {
+    padding: 1.5rem;
+    margin: 0.3rem;
+  }
   .accordion__content p {
     font-size: 1rem;
-    font-weight: light;
+    font-weight: 300;
   }
 }
 /* sm */
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
-    max-height: 700px;
+    height: 515px;
   }
-
+  .accordion__body {
+    padding: 0.5rem;
+    margin: 1rem;
+  }
   .accordion__content p {
-    font-size: 1.3em;
+    font-size: 1.2rem;
     font-weight: light;
   }
 }
@@ -67,10 +95,14 @@ body {
 @media (min-width: 768px) {
   .container {
     max-width: 780px;
-    max-height: 700px;
+    max-height: 520px;
+  }
+  .accordion__body {
+    margin: 1.1rem;
+    padding: 1.5rem;
   }
   .accordion__content p {
-    font-size: 1.4em;
+    font-size: 1.3rem;
     font-weight: light;
   }
 }
@@ -78,16 +110,31 @@ body {
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
-    max-height: 600px;
+  }
+  .accordion__body {
+    padding: 1.5rem;
+    margin: 1.3rem;
   }
   .accordion__content p {
-    font-size: 1.4em;
+    font-size: 1.4rem;
     font-weight: light;
   }
 }
 /* xl */
-/* @media (min-width: 1280px) {
-} */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    height: 700px;
+  }
+  .accordion__body {
+    padding: 1.5rem;
+    margin: 1.3rem;
+  }
+  .accordion__content p {
+    font-size: 1.4rem;
+    font-weight: light;
+  }
+}
 /* 2xl*/
 /* @media (min-width: 1536px) {
 } */
