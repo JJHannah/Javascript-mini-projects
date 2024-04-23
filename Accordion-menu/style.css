@@ -52,3 +52,6 @@ body {
   font-weight: 400;
   height: 0;
 }
+.accordion .accordion__content .active {
+  height: 150px;
+}
