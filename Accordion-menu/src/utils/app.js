@@ -1,9 +1,10 @@
 const menu = () => {
   const content = document.querySelectorAll(".accordion__content");
-  for (i = 0; i < content.length; i++) {
-    content[i].addEventListener("click", select);
-    this.classList.remove("active");
-  }
+
+  content.forEach((value) => {
+    console.log(value);
+    content.classList.remove("active");
+  });
 };
 
 export default menu;
