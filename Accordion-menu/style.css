@@ -52,3 +52,6 @@ body {
   font-weight: 400;
   height: 0;
 }
+.accordion__content .open {
+  display: block;
+}
