@@ -29,7 +29,6 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
-  background-color: #fff5e0;
   font-size: 1.5rem;
   text-transform: capitalize;
 }
@@ -38,7 +37,7 @@ body {
   margin: 0.5rem;
 }
 .accordion__content {
-  background-color: #ffedd8;
+  background-color: hsl(32, 100%, 92%);
   border: 1px solid 3FFEDD8;
   margin: 0.5rem;
   padding: 0.2rem;
@@ -52,6 +51,10 @@ body {
   font-weight: 400;
   height: 0;
 }
-.accordion__content .open {
+.open .accordion__content {
   display: block;
+}
+
+.accordion__content:hover {
+  background-color: hsl(32, 84%, 81%);
 }

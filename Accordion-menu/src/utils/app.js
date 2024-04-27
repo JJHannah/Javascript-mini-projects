@@ -4,10 +4,6 @@ const menu = () => {
   content.forEach((value) => {
     let subtitle = value.querySelector(".subtitle");
     console.log(subtitle);
-
-    subtitle.addEventListener("click", () => {
-      value.classList.toggle("open");
-    });
   });
 };
 
