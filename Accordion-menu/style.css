@@ -27,21 +27,19 @@ body {
 .accordion .header {
   min-height: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
   text-transform: capitalize;
 }
-.accordion .header i {
-  font-size: 1.5rem;
-  margin: 0.5rem;
-}
+
 .accordion__content {
   background-color: hsl(32, 100%, 92%);
   border: 1px solid 3FFEDD8;
   margin: 0.5rem;
   padding: 0.2rem;
   overflow: hidden;
+  position: relative;
 }
 .accordion__content h2 {
   margin-bottom: 0.5rem;
@@ -57,4 +55,18 @@ body {
 
 .accordion__content:hover {
   background-color: hsl(32, 84%, 81%);
+}
+.accordion .subtitle:after {
+  content: "\02795";
+  font-size: 1rem;
+  color: #777;
+
+  margin-top: 1rem;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  bottom: 1rem;
+}
+.active:after {
+  content: "\2796";
 }
