@@ -40,16 +40,18 @@ body {
   padding: 0.2rem;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
-.accordion__content h2 {
+.subtitle {
   margin-bottom: 0.5rem;
   text-transform: capitalize;
+  cursor: pointer;
 }
-.accordion__content p {
+/* .accordion__content {
   font-weight: 400;
-  height: 0;
-}
-.subtitle.is-open + .accordion__content {
+  
+} */
+.subtitle.is-open + .description {
   display: block;
 }
 
@@ -60,7 +62,6 @@ body {
   content: "\02795";
   font-size: 1rem;
   color: #777;
-
   margin-top: 1rem;
   position: absolute;
   top: 0px;

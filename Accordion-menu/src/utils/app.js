@@ -8,9 +8,10 @@ const menu = () => {
       } else {
         const openSubtitles = document.querySelectorAll(".is-open");
         openSubtitles.forEach((openTitle) => {
-          openTitle.classList.remove("is-open");
+          if (openTitle.classList.remove("is-open")) {
+            openTitle.classList.add("is-open");
+          }
         });
-        openTitle.classList.add("is-open");
       }
     });
   });
