@@ -1,13 +1,22 @@
 const menu = () => {
-  const content = document.querySelectorAll(".accordion__content");
+  const subtitles = document.querySelectorAll(".subtitle");
+  const openSubtitles = document.querySelectorAll(".is-open");
 
-  content.forEach((text) => {
-    text.addEventListener("click", () => {
-      let description = text.querySelector(".description");
-      console.log(description);
-      text.classList.toggle("open");
+  subtitles.forEach((subtitle) => {
+    subtitle.addEventListener("click", () => {
+      if (subtitle.classList.contains("is-open")) {
+        subtitle.classList.remove("is-open");
+      } else {
+        openSubtitles.forEach((openTitle) => {
+          openTitle.addEventListener('click',()=>{
+            if(openTitle.classList.remove('is-open')){
+              openTitle.classList.add('is-open')})
+            }
+          
+
+        });
+      }
     });
   });
-};
 
-export default menu;
+  export default menu;

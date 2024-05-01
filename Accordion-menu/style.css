@@ -49,7 +49,7 @@ body {
   font-weight: 400;
   height: 0;
 }
-.open .accordion__content {
+.subtitle.is-open + .accordion__content {
   display: block;
 }
 
