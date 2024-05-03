@@ -33,7 +33,7 @@ body {
   text-transform: capitalize;
 }
 
-.accordion__content {
+.accordion__item {
   background-color: hsl(32, 100%, 92%);
   border: 1px solid 3FFEDD8;
   margin: 0.5rem;
@@ -47,15 +47,15 @@ body {
   text-transform: capitalize;
   cursor: pointer;
 }
-/* .accordion__content {
-  font-weight: 400;
-  
-} */
-.subtitle.is-open + .description {
+
+.subtitle + .accordion__content {
+  display: none;
+}
+.subtitle.is-open + .accordion__content {
   display: block;
 }
 
-.accordion__content:hover {
+.subtitle:hover {
   background-color: hsl(32, 84%, 81%);
 }
 .accordion .subtitle:after {
