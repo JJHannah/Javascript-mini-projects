@@ -58,16 +58,3 @@ body {
 .subtitle:hover {
   background-color: hsl(32, 84%, 81%);
 }
-.accordion .subtitle:after {
-  content: "\02795";
-  font-size: 1rem;
-  color: #777;
-  margin-top: 1rem;
-  position: absolute;
-  top: 0px;
-  right: 20px;
-  bottom: 1rem;
-}
-.active:after {
-  content: "\2796";
-}
