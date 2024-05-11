@@ -19,12 +19,9 @@ body {
   border-radius: 10px;
 
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background: #a770ef;
-  background: -webkit-linear-gradient(to right, #fdb99b, #cf8bf3, #a770ef);
-  background: linear-gradient(to right, #fdb99b, #cf8bf3, #a770ef);
-  background: #a770ef;
-  background: -webkit-linear-gradient(to right, #fdb99b, #cf8bf3, #a770ef);
-  background: linear-gradient(to right, #fdb99b, #cf8bf3, #a770ef);
+  background: #00d2ff;
+  background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+  background: linear-gradient(to right, #3a7bd5, #00d2ff);
 }
 .card__header {
   text-align: center;
@@ -32,7 +29,6 @@ body {
   font-family: monospace;
 }
 .card__item {
-  /* border: 1px solid green; */
   margin: 0.9rem 1.2rem;
   padding: 0.5rem 1rem;
 }
@@ -46,6 +42,11 @@ input[type="text"] {
   margin-left: 1.2rem;
   display: inline-block;
   font-size: 1.2rem;
+  background-color: #0284c7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 .card__content {
   display: flex;
