@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,18 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div class="card__container">
+      <h1 class="card__header">Weather app</h1>
+      <div class="card__item">
+        <input type="text" placeholder="Enter Location" />
+        <button class="btnSearch">search</button>
+        <div class="card__content">
+          <p class="location">location</p>
+          <p class="temperature">temperature</p>
+          <p class="description">description</p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>
