@@ -1,9 +1,15 @@
 const weatherApp = () => {
-  const apiKey = "YOUR_API_KEY";
+  // const apiKey = "YOUR_API_KEY";
   // const apiUrl;
-  const location = document.querySelector(".location");
-  const temperature = document.querySelector(".temperature");
-  const description = document.querySelector(".description");
+  const locationElem = document.querySelector(".location");
+  const temperatureElem = document.querySelector(".temperature");
+  const descriptionElem = document.querySelector(".description");
+  const input = document.querySelector(".inputElem");
   const btnSearch = document.querySelector(".btnSearch");
+
+  btnSearch.addEventListener("click", () => {
+    const input = inputElem.value;
+    console.log(input);
+  });
 };
 export default weatherApp;
