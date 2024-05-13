@@ -8,8 +8,12 @@ const weatherApp = () => {
   const btnSearch = document.querySelector(".btnSearch");
 
   btnSearch.addEventListener("click", () => {
-    const input = inputElem.value;
-    console.log(input);
+    const weatherSearch = inputElem.value;
+    console.log(weatherSearch);
+
+    if (weatherSearch) {
+      weather(weatherSearch);
+    }
   });
 };
 export default weatherApp;
