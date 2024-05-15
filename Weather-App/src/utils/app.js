@@ -15,6 +15,10 @@ const weatherApp = () => {
     try {
       const weatherSearch = inputElem.value;
       console.log(weatherSearch);
+
+      if (!weatherSearch) {
+        throw new Error("location not found");
+      }
     } catch (error) {
       console.log(error);
     }
