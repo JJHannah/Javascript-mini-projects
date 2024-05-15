@@ -4,16 +4,14 @@ const weatherApp = () => {
   const locationElem = document.querySelector(".location");
   const temperatureElem = document.querySelector(".temperature");
   const descriptionElem = document.querySelector(".description");
-  const input = document.querySelector(".inputElem");
+  const inputElem = document.querySelector(".inputElem");
   const btnSearch = document.querySelector(".btnSearch");
+  const apikey = "";
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputElem}&appid=${apiKey}&units=metric`;
 
   btnSearch.addEventListener("click", () => {
     const weatherSearch = inputElem.value;
     console.log(weatherSearch);
-
-    if (weatherSearch) {
-      weather(weatherSearch);
-    }
   });
 };
 export default weatherApp;
