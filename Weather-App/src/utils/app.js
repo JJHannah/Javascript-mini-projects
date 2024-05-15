@@ -6,8 +6,8 @@ const weatherApp = () => {
   const descriptionElem = document.querySelector(".description");
   const inputElem = document.querySelector(".inputElem");
   const btnSearch = document.querySelector(".btnSearch");
-  // const apikey = "";
-  // const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputElem}&appid=${apiKey}&units=metric`;
+  // const apiKey = "";
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputElem}&appid=${apiKey}&units=metric`;
 
   btnSearch.addEventListener("click", fetchData);
 
@@ -16,9 +16,11 @@ const weatherApp = () => {
       const weatherSearch = inputElem.value;
       console.log(weatherSearch);
 
-      if (!weatherSearch) {
+      if (!weatherSearch.ok) {
         throw new Error("location not found");
       }
+
+      return weatherSearch.json();
     } catch (error) {
       console.log(error);
     }
