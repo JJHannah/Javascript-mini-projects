@@ -6,14 +6,14 @@ const weatherApp = () => {
   const descriptionElem = document.querySelector(".description");
   const inputElem = document.querySelector(".inputElem");
   const btnSearch = document.querySelector(".btnSearch");
-  // const apiKey = "";
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputElem}&appid=${apiKey}&units=metric`;
+  // // const apiKey = "";
+  // const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputElem}&appid=${apiKey}&units=metric`;
 
   btnSearch.addEventListener("click", fetchData);
 
   async function fetchData() {
     try {
-      const weatherSearch = inputElem.value;
+      const weatherSearch = inputElem.value.toLowerCase();
       console.log(weatherSearch);
 
       if (!weatherSearch.ok) {
