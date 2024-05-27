@@ -4,7 +4,7 @@ const calculator = () => {
   btn.addEventListener("click", appendToDisplay);
 
   function appendToDisplay(input) {
-    document.getElementsByClassName("input").value += value;
+    document.getElementsById("input").value += value;
   }
 };
 

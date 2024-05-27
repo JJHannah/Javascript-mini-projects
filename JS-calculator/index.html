@@ -9,9 +9,9 @@
   </head>
   <body>
     <div class="calculator">
-      <input type="numbers" class="input" readonly />
+      <input type="numbers" id="input" readonly />
       <div class="buttons">
-        <button class="btn" onclick="appendToDisplay('(')">(</button>
+        <button class="btn" onclick="appendToDisplay(')')">(</button>
         <button class="btn" onclick="appendToDisplay(')')">)</button>
         <button class="btn" onclick="clearLastElement()">CE</button>
         <button class="btn" onClick="clearDisplay()">AC</button>
@@ -34,6 +34,6 @@
       </div>
     </div>
 
-    <script type="module" src=".src/main.js"></script>
+    <script type="module" src="src/utils/calculator.js"></script>
   </body>
 </html>
