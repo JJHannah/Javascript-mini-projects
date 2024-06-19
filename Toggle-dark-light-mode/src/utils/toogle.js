@@ -5,7 +5,7 @@ const toggle = () => {
   toggle.addEventListener("click", () => {
     element.classList.toggle("dark-mode");
   });
-  localStorage.setItem();
+  localStorage.setItem(dark-mode);
 };
 
 export default toggle;
