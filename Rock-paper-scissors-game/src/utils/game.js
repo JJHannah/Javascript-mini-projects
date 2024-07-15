@@ -26,6 +26,8 @@ const game = () => {
 
   function playGame() {
     playRound();
+    humanScore;
+    computerScore;
   }
 };
 
