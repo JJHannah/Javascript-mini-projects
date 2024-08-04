@@ -29,6 +29,8 @@ const game = () => {
     humanScore;
     computerScore;
   }
+  function reset(){
+    
 };
 
 export default game;
