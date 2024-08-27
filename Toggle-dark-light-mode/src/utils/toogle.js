@@ -16,7 +16,7 @@ const toggle = () => {
     if (appliedTheme === "dark") {
       document.body.classList.add("dark-mode");
     } else {
-      document.body.classList.r("dark-mode");
+      document.body.classList.remove("dark-mode");
     }
   };
   toggleBtn.addEventListener("click", toggleTheme);
