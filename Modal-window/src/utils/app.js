@@ -9,6 +9,12 @@ const app = () => {
   closeModal.addEventListener("click", () => {
     modal.classList.remove("open");
   });
+
+  window.addEventListener('keydown',(e)=>{
+    if(e.key === 'Escape'){
+      //  modal.classList.remove("open")
+     }
+  })
 };
 
 export default app;
