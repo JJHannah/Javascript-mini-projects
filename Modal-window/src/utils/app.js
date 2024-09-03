@@ -12,7 +12,7 @@ const app = () => {
 
   window.addEventListener('keydown',(e)=>{
     if(e.key === 'Escape'){
-       modal.classList.remove("open")
+       modal.classList.remove('open')
      }
   })
 };
