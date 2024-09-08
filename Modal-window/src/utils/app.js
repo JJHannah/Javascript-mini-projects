@@ -3,18 +3,23 @@ const app = () => {
   const closeModal = document.querySelector(".closeModal");
   const modal = document.getElementById("modal");
 
-  openModal.addEventListener("click", () => {
+  const openModalFunction = () => {
     modal.classList.add("open");
-  });
-  closeModal.addEventListener("click", () => {
-    modal.classList.remove("open");
-  });
+  };
 
-  window.addEventListener('keydown',(e)=>{
-    if(e.key === 'Escape'){
-       modal.classList.remove('open')
-     }
-  })
+  const closeModalFunction = () => {
+    modal.classList.remove("open");
+  };
+
+  const windowEscape = (e) => {
+    if (e.key === "Escape") {
+      modal.classList.remove("open");
+    }
+  };
+
+  openModal.addEventListener("click", openModalFunction);
+  closeModal.addEventListener("click", closeModalFunction);
+  window.addEventListener("keydown", windowEscape);
 };
 
 export default app;
