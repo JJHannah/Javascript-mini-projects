@@ -11,5 +11,15 @@ function Palindrome(str) {
     return false;
   }
 }
-
+function showPalindrome() {
+  return (
+    <>
+      <div>
+        <label htmlFor="inputText">Enter String</label>
+      </div>
+      <input className=" inputText" type="text" />(
+      <button className="btn">{Palindrome}SUBMIT</button>)
+    </>
+  );
+}
 export default Palindrome;
