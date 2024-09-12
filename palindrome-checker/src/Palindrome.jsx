@@ -11,4 +11,5 @@ function Palindrome(str) {
     return false;
   }
 }
+
 export default Palindrome;
