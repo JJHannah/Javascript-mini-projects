@@ -1,0 +1,9 @@
+:root {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  border: 2px solid red;
+  margin: 0 50vh;
+}
