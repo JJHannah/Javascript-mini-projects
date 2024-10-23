@@ -1,0 +1,41 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+ .container{
+border : 2px solid red;
+height: 75%vh;   
+width: 300px;
+display: flex;
+flex-direction: column;
+justify-items: center;
+align-items: center;
+
+}
+.buttons{
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+margin-bottom: 1rem;
+margin: 1rem;
+
+}
+input{
+align-items: center;
+width: 90%;
+padding: 10px;
+}
+button{
+margin-top:1rem;
+padding: 20px ;
+font-size: 1.2em;
+border-radius:50px;
+background-color:#1e3a8a;
+color: white;
+
+}
+.btn + .signs{
+background-color: rgb(236, 24, 24);
+}
