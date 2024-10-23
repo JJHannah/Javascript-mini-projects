@@ -19,6 +19,7 @@ const toggle = () => {
       document.body.classList.remove("dark-mode");
     }
   };
+
   toggleBtn.addEventListener("click", toggleTheme);
   enabledTheme();
 };
