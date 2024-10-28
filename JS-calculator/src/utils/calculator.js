@@ -1,11 +1,15 @@
 const calculator = () => {
-  const btn = document.querySelectorAll(".btn");
+  const input  = document.getElementById('input')
+  const buttons = document.querySelectorAll('.btn')
 
-  btn.addEventListener("click", appendToDisplay);
-
-  function appendToDisplay(value) {
-    document.getElementsById("input").value += value;
+  function appendToDisplay(){
+    buttons.forEach((button)=>{
+      button.addEventListener('click',()=>{
+      console.log(button.textContent);
+       })
+    })
   }
+   
 };
 
 export default calculator;

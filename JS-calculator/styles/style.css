@@ -5,13 +5,14 @@ body{
   height: 100vh;
 }
 .calculator{
-border : 2px solid red;
+border : 2px solid white;
 height: 75%vh;   
 width: 300px;
 display: flex;
 flex-direction: column;
 justify-items: center;
 align-items: center;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
 .buttons{
@@ -27,6 +28,7 @@ input{
 align-items: center;
 width: 90%;
 padding: 10px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 button{
 margin-top:1rem;
