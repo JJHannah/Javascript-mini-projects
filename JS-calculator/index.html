@@ -9,25 +9,25 @@
   </head>
   <body>
     <div class="calculator">
-      <input type="numbers" id="input" readonly />
+      <p class="displayCalculation"></p>
       <div class="buttons">
-        <button class="btn signs" onclick="appendToDisplay('+')">+</button>
-        <button class="btn" onclick="appendToDisplay('7')">7</button>
-        <button class="btn" onclick="appendToDisplay('8')">8</button>
-        <button class="btn" onclick="appendToDisplay('9')">9</button>
-        <button class="btn signs" onclick="appendToDisplay('-')">-</button>
-        <button class="btn" onclick="appendToDisplay('4')">4</button>
-        <button class="btn" onclick="appendToDisplay('5')">5</button>
-        <button class="btn" onclick="appendToDisplay('6')">6</button>
-        <button class="btn signs" onclick="appendToDisplay('*')">*</button>
-        <button class="btn" onclick="appendToDisplay('1')">1</button>
-        <button class="btn" onclick="appendToDisplay('2')">2</button>
-        <button class="btn" onclick="appendToDisplay('3')">3</button>
-        <button class="btn signs" onclick="appendToDisplay('/')">/</button>
-        <button class="btn" onclick="appendToDisplay('0')">0</button>
-        <button class="btn" onclick="appendToDisplay('.')">.</button>
-        <button class="btn" onclick="calculateResult('=')">=</button>
-        <button class="btn signs" onclick="clearDisplay()">AC</button>
+        <button class="signs" onclick="calcToDisplay(' + ')" ;>+</button>
+        <button onclick="calcToDisplay('7')" ;>7</button>
+        <button onclick="calcToDisplay('8')" ;>8</button>
+        <button onclick="calcToDisplay('9')" ;>9</button>
+        <button class="signs" onclick="calcToDisplay('-')" ;>-</button>
+        <button onclick="calcToDisplay('4')" ;>4</button>
+        <button onclick="calcToDisplay('5')" ;>5</button>
+        <button onclick="calcToDisplay('6')" ;>6</button>
+        <button class="signs" onclick="calcToDisplay(' * ')" ;>*</button>
+        <button onclick="calcToDisplay('1')" ;>1</button>
+        <button onclick="calcToDisplay('2')" ;>2</button>
+        <button onclick="calcToDisplay('3')" ;>3</button>
+        <button class="signs" onclick="calcToDisplay('/')" ;>/</button>
+        <button onclick="calcToDisplay('0')" ;>0</button>
+        <button onclick="calcToDisplay(' . ')" ;>.</button>
+        <button onclick="calculateResult(' = ')" ;>=</button>
+        <button class="signs" onclick="clearDisplay()" ;>AC</button>
       </div>
     </div>
 

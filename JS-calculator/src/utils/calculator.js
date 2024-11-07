@@ -1,15 +1,19 @@
 const calculator = () => {
-  // const input = document.getElementById("input");
-  const buttons = document.querySelectorAll(".btn");
-
   let calculation = "";
-  function appendToDisplay(value) {
-    buttons.forEach((button) => {
-      calculation += value;
-      console.log(button.textContent);
-    });
+
+  function calcToDisplay(value) {
+    calculation += value;
+    console.log(calculation);
   }
-  appendToDisplay();
+  calcToDisplay();
 };
 
+function clearDisplay(value) {
+  let calculation = "";
+}
+function calculateResult(){
+  calculation = eval(calculation);
+  return calculation
+}
+clearDisplay();
 export default calculator;
