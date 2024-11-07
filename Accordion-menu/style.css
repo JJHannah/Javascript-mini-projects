@@ -41,6 +41,12 @@ body {
   position: relative;
   cursor: pointer;
 }
+.accordion-desc {
+  background-color: white;
+  padding: 20px;
+  line-height: 1.5;
+}
+
 .subtitle {
   padding: 0.8rem;
   text-transform: capitalize;
