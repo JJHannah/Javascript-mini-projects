@@ -41,10 +41,12 @@ body {
   position: relative;
   cursor: pointer;
 }
+
 .accordion-desc {
   background-color: white;
   padding: 20px;
   line-height: 1.5;
+  font-size: 1.2rem;
 }
 
 .subtitle {
@@ -61,5 +63,6 @@ body {
 }
 
 .subtitle:hover {
+  transition: background-color 0.3s ease;
   background-color: hsl(32, 84%, 81%);
 }
