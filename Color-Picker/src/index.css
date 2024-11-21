@@ -7,11 +7,9 @@ body {
 .container {
   border: 2px solid rgb(224, 237, 243);
   width: 50vw;
-  height: 50vh;
+  max-height: 50vh;
   place-items: center;
   margin: 50px auto;
-  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-   */
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
@@ -24,4 +22,9 @@ p {
 }
 label {
   font-size: 1.2rem;
+}
+.displayColor {
+  border: 4px soild rgb(173, 115, 115);
+  width: 200px;
+  height: 300px;
 }

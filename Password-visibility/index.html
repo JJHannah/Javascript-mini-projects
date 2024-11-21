@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container">
+      <label for="username">Username</label>
+      <input type="text" class="username" />
+
+      <label for="password" class="password">Password</label>
+      <div class="btn">
+        <input
+          type="password"
+          name="password"
+          id="pass"
+          minlength="8"
+          required
+        />
+        <div class="toggle">
+          <i class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

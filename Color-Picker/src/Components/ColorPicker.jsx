@@ -18,7 +18,7 @@ export default function ColorPicker() {
         id="bgColor"
         onChange={handleColorPicker}
       />
-      <p>Selected color: {color}</p>
+      <p className="displayColor">Selected color: {color}</p>
     </div>
   );
 }
