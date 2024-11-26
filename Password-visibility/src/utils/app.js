@@ -1,4 +1,4 @@
-export default function password() {
+function password() {
   const passElement = document.querySelector(".password");
   const username = document.querySelector(".username");
   const icon = document.querySelector(".fa-eye");
@@ -14,3 +14,4 @@ export default function password() {
     }
   }
 }
+export default password;

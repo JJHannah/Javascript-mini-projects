@@ -1,4 +1,4 @@
 import "../style.css";
-import password from "../src/utils/app";
+import password from "../src/utils/app.js";
 
 password();
