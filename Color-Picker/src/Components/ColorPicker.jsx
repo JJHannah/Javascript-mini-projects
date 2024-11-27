@@ -6,6 +6,12 @@ export default function ColorPicker() {
   function handleColorPicker(event) {
     setColor(event.target.value);
   }
+  function handleChangeInBox(e) {
+    document.querySelector(".box").style.backgroundColor = newColor;
+    const newColor = handleColorPicker();
+
+    // box.innerText = newColor;
+  }
   return (
     <div className="container">
       <h1>Color Picker</h1>
@@ -18,7 +24,8 @@ export default function ColorPicker() {
         id="bgColor"
         onChange={handleColorPicker}
       />
-      <p className="displayColor">Selected color: {color}</p>
+      <div className="box" onChange={handleChangeInBox}></div>
+      <p>Selected color: {color}</p>
     </div>
   );
 }
