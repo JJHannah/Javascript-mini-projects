@@ -24,7 +24,7 @@ export default function ColorPicker() {
         id="bgColor"
         onChange={handleColorPicker}
       />
-      <div className="box" onChange={handleChangeInBox}></div>
+      <div className="box" style={{ backgroundColor: color }}></div>
       <p>Selected color: {color}</p>
     </div>
   );
