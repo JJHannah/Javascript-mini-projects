@@ -4,7 +4,7 @@ function password() {
   const icon = document.querySelector(".fa-eye");
   const toggleIcon = document.querySelector(".toggle");
 
-  toggleIcon.addEventListener("click", iconChange);
+  toggleIcon.addEventListener("click", passVisible);
 
   function iconChange() {
     if (icon.classList.contains("fa-eye")) {
@@ -14,4 +14,15 @@ function password() {
     }
   }
 }
+
+function passVisible() {
+  const passElement = document.querySelector(".password");
+  if (passElement.type === "password") {
+    passElement.type === "text";
+    console.log(passElement.type);
+  } else {
+    passElement.type = "password";
+  }
+}
+passVisible();
 export default password;
