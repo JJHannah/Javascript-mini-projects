@@ -1,6 +1,8 @@
 import Style from "./components/Style.css";
 
 function Palindrome() {
+
+  
   function ShowPalindrome(str) {
     const newString = str.toLowerCase().replace(/[^a-z0-9]/g, "");
 

@@ -5,9 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "react-dotenv  && vite build",
-    "serve": "react-dotenv && serve build",
-    "start": "react-dotenv && react-scripts start",
+    "build": "build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
