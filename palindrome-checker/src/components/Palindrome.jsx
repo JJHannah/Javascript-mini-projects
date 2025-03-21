@@ -1,19 +1,15 @@
 import Style from "./components/Style.css";
 
 const Palindrome = () => {
-  function displayPalindrome(str) {
-    const newString = str.toLowerCase().replace(/[^a-z0-9]/g, "");
-
+  const displayPalindrome = (str) => {
+    const newString = str.replace(/\W/g, "").toLowerCase();
     const reverseString = newString.split("").reverse().join("");
-
     if (newString === reverseString) {
-      console.log("Is a palindrome");
       return true;
     } else {
-      console.log("Not a palindrome");
       return false;
     }
-  }
+  };
   return (
     <div>
       <label htmlFor="search">Enter String </label>
