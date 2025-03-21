@@ -1,11 +1,7 @@
 import Style from "./components/Style.css";
 
-function Palindrome() {
-  const btn = document.querySelector(".btnSearch");
-  const input = document.querySelector(".inputText");
-  const p = document.querySelector(".displayPalindrome");
-
-  function ShowPalindrome(str) {
+const Palindrome = () => {
+  function displayPalindrome(str) {
     const newString = str.toLowerCase().replace(/[^a-z0-9]/g, "");
 
     const reverseString = newString.split("").reverse().join("");
@@ -19,13 +15,12 @@ function Palindrome() {
     }
   }
   return (
-    <>
-      <div className="container">
-        <label htmlFor="inputText">Enter String</label>
-      </div>
-      <input className=" inputText" type="text" />
-      <button className="btnSearch">{ShowPalindrome}SUBMIT</button>
-    </>
+    <div>
+      <label htmlFor="search">Enter String </label>
+      <input id="search" className="search" type="text" />
+      <button onClick={displayPalindrome}>click me</button>
+    </div>
   );
-}
+};
+
 export default Palindrome;
