@@ -1,20 +1,33 @@
-import Style from "./components/Style.css";
+// import Style from "./components/Style.css";
 
 const Palindrome = () => {
-  const displayPalindrome = (str) => {
-    const newString = str.replace(/\W/g, "").toLowerCase();
-    const reverseString = newString.split("").reverse().join("");
-    if (newString === reverseString) {
+  const handleChange = (e) => {
+    const newString = e.target.value;
+    console.log(newString);
+    const changeLetterCase = newString.replace(/\W/g, "").toLowerCase();
+    // console.log(changeLetterCase);
+    const reverseString = changeLetterCase.split("").reverse().join("");
+    // console.log(reverseString);
+
+    if (changeLetterCase === reverseString) {
+      console.log("true");
       return true;
     } else {
+      console.log("false");
       return false;
     }
   };
+
   return (
     <div>
       <label htmlFor="search">Enter String </label>
-      <input id="search" className="search" type="text" />
-      <button onClick={displayPalindrome}>click me</button>
+      <input
+        id="search"
+        className="search"
+        type="text"
+        onChange={handleChange}
+      />
+      {/* <button onClick={handleChange}>click me</button> */}
     </div>
   );
 };
