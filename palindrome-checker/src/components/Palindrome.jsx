@@ -27,7 +27,7 @@ const Palindrome = () => {
         type="text"
         onChange={handleChange}
       />
-      {/* <button onClick={handleChange}>click me</button> */}
+      <button onClick={handleChange}>click me</button>
     </div>
   );
 };
