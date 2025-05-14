@@ -1,21 +1,10 @@
 // import Style from "./components/Style.css";
-
+import { useState } from "react";
 const Palindrome = () => {
-  const handleChange = (e) => {
-    const newString = e.target.value;
-    console.log(newString);
-    const changeLetterCase = newString.replace(/\W/g, "").toLowerCase();
-    // console.log(changeLetterCase);
-    const reverseString = changeLetterCase.split("").reverse().join("");
-    // console.log(reverseString);
+  const [searchTerm, setSearchTerm] = useState("");
 
-    if (changeLetterCase === reverseString) {
-      console.log("true");
-      return true;
-    } else {
-      console.log("false");
-      return false;
-    }
+  const handleChange = (e) => {
+    setSearchTerm(e.target.value);
   };
 
   return (
@@ -27,6 +16,7 @@ const Palindrome = () => {
         type="text"
         onChange={handleChange}
       />
+      <p>Searching for : {searchTerm}</p>
       <button onClick={handleChange}>click me</button>
     </div>
   );
