@@ -1,5 +1,5 @@
 import Palindrome from "./components/Palindrome";
-// import Style from "./components/Style.css";
+import "./Style.css";
 
 function App() {
   return <Palindrome />;

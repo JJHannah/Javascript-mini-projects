@@ -1,24 +1,31 @@
-// import Style from "./components/Style.css";
-import { useState } from "react";
 const Palindrome = () => {
-  const [searchTerm, setSearchTerm] = useState("");
+  const inputElem = document.querySelector(".inputCheck");
+  const btnCheck = document.querySelector("button");
+  const displayOutput = document.querySelector(".output");
 
-  const handleChange = (e) => {
-    setSearchTerm(e.target.value);
-  };
+  btnCheck.addEventListener("click", isPalindrome);
 
+  function isPalindrome() {
+    const inputValue = inputElem.value;
+
+    const newString = inputValue.toLowerCase().replace(/[^a-z0-9]/g, "");
+    const reverseString = newString.split("").reverse().join("");
+
+    if (newString === reverseString) {
+      displayOutput.textContent = "It is a palindrome";
+      return true;
+    } else {
+      displayOutput.textContent = "Not palindrome";
+      return false;
+    }
+  }
   return (
-    <div>
-      <label htmlFor="search">Enter String </label>
-      <input
-        id="search"
-        className="search"
-        type="text"
-        onChange={handleChange}
-      />
-      <p>Searching for : {searchTerm}</p>
-      <button onClick={handleChange}>click me</button>
-    </div>
+    <>
+      <label for="name">Name</label>
+      <input class="inputCheck" type="text" />
+      <button>check</button>
+      <p class="output"></p>
+    </>
   );
 };
 
