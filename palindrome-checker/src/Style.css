@@ -1,3 +1,7 @@
+:root {
+  --input-border: #bbb;
+  --input-focus-border: hsl(180, 81%, 39%);
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -14,7 +18,7 @@ body {
   flex-direction: column;
   border: 2px solid whitesmoke;
   height: 50vh;
-  width: 300px;
+  width: 400px;
   margin: 50px auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -30,18 +34,22 @@ input[type="text"] {
   margin-bottom: 1.2rem;
   padding: 10px 15px;
 }
+input[type="text"]:focus {
+  outline-color: var(--input-focus-border);
+  border-color: var(--Qnput-border);
+}
 button {
   padding: 10px 25px;
   font-size: 1.2rem;
   text-transform: capitalize;
   border: none;
   border-radius: 10px;
-  background-color: aqua;
+  background-color: hsl(180, 94%, 48%);
   margin-bottom: 1.2rem;
   margin-right: 10px;
   cursor: pointer;
 }
 button:hover {
-  background-color: rgb(19, 180, 180);
+  background-color: hsl(180, 81%, 39%);
   color: white;
 }
