@@ -22,5 +22,6 @@ function isPalindrome() {
 }
 
 function resetInputElem() {
-  return (inputElem.value = "");
+  displayOutput.textContent = "";
+  inputElem.value = "";
 }

@@ -23,6 +23,7 @@ label {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   text-transform: capitalize;
+  font-weight: bold;
 }
 input[type="text"] {
   font-size: 1.2rem;
@@ -37,4 +38,10 @@ button {
   border-radius: 10px;
   background-color: aqua;
   margin-bottom: 1.2rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(19, 180, 180);
+  color: white;
 }
