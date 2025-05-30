@@ -18,16 +18,19 @@ body {
   margin: 50px auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 label {
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
 }
 input[type="text"] {
   font-size: 1.2rem;
   margin-bottom: 1.2rem;
+  padding: 10px 15px;
 }
 button {
-  padding: 10px 30px;
+  padding: 10px 25px;
   font-size: 1.2rem;
   text-transform: capitalize;
   border: none;
