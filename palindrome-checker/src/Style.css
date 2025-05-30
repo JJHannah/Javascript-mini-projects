@@ -1,13 +1,37 @@
-:root {
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-.container {
-  border: 2px solid red;
-  margin: 0 50vh;
+body {
+  font-size: 1.2rem;
 }
 
-body {
-  background-color: burlywood;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid whitesmoke;
+  height: 50vh;
+  width: 300px;
+  margin: 50px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+label {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+input[type="text"] {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+button {
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 10px;
+  background-color: aqua;
+  margin-bottom: 1.2rem;
 }

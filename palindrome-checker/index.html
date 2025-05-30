@@ -3,13 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
     <title>palindrome</title>
   </head>
   <body>
-    <label for="name">Name</label>
-    <input class="inputCheck" type="text" />
-    <button>check</button>
-    <p class="output"></p>
+    <div class="container">
+      <div class="content"></div>
+      <label for="name">Enter your word</label>
+      <input class="inputCheck" type="text" />
+      <div class="buttons">
+        <button>check</button>
+        <button class="btnReset">reset</button>
+      </div>
+
+      <p class="output"></p>
+      <!-- container -->
+    </div>
     <script src="./src/utils/app.js"></script>
   </body>
 </html>
