@@ -6,3 +6,8 @@ const calculator = () => {
 };
 
 export default calculator;
+
+// {
+//   if (e.target.nodeName === "BUTTON") {
+//     paragraph.append(e.target.textContent);
+//   // }
