@@ -1,5 +1,5 @@
 import "./style.css";
 
-import calculator from ".src/utils/calculator.js";
+import calculation from ".src/utils/calculator.js";
 
-calculator();
+calculation();
