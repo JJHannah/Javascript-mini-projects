@@ -14,13 +14,7 @@ body {
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 1rem;
-  margin: 1rem;
-}
+
 input {
   align-items: center;
   width: 90%;
@@ -29,7 +23,7 @@ input {
 }
 button {
   margin-top: 1rem;
-  padding: 20px;
+  padding: 10px 15px;
   font-size: 1.2em;
   border-radius: 50px;
   background-color: #1e3a8a;
