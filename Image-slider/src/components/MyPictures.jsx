@@ -12,3 +12,5 @@ function PictureSlide() {
   );
 }
 export default PictureSlide;
+
+// https://github.com/romkatv/powerlevel10k/blob/master/README.md#meslo-nerd-font-patched-for-powerlevel10k
