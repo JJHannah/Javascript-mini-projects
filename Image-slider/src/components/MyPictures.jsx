@@ -7,7 +7,9 @@ function PictureSlide() {
 
   return (
     <div className="container">
+      <button>previous</button>
       <p></p>
+      <button>next</button>
     </div>
   );
 }
