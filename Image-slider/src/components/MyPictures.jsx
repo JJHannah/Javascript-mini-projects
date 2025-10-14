@@ -23,6 +23,7 @@ function PictureSlide() {
     <div className="container">
       <button>previous</button>
       <p></p>
+      <img src="" alt="" />
       <button>next</button>
     </div>
   );
