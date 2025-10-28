@@ -2,16 +2,16 @@ body {
   font-family: sans-serif;
 }
 .container {
-  border: 2px solid rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 500px;
   max-height: 80vh;
   place-items: center;
   margin: 50px auto;
+  border: 2px solid rgb(250, 250, 250);
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   border-radius: 10px;
 }
 input[type="color"] {
