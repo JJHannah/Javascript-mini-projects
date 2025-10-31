@@ -14,3 +14,5 @@ function movePic() {
     }, i * 2000);
   });
 }
+
+function stopAnimation() {}
