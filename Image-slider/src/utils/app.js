@@ -14,5 +14,6 @@ function movePic() {
     }, i * 2000);
   });
 }
+_modules;
 
 function stopAnimation() {}
