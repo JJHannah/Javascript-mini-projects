@@ -20,4 +20,4 @@ function movePic() {
 }
 
 // function stopAnimation() {}
-``;
+let slides = 0;
