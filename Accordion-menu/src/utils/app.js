@@ -7,12 +7,12 @@ const menu = () => {
       subtitle.classList.toggle("is-open");
     });
   });
-  function removeOpenSubtitle() {
-    openSubtitles.forEach((openSubtitle) => {
-      openSubtitle.classList.remove("is-open");
-    });
-  }
-  removeOpenSubtitle();
+  // function removeOpenSubtitle() {
+  //   openSubtitles.forEach((openSubtitle) => {
+  //     openSubtitle.classList.remove("is-open");
+  //   });
+  // }
+  // removeOpenSubtitle();
 };
 
 export default menu;

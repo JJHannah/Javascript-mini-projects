@@ -3,11 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  font-family: "Satoshi", sans-serif;
-}
+
 body {
-  background-color: #e5ecf1;
+  background-color: #f1f1f1;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -31,6 +29,7 @@ body {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
   text-transform: capitalize;
+  font-family: "Playfair Display", serif;
 }
 
 .accordion__item {
@@ -40,6 +39,8 @@ body {
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  font-family: "Playfair Display", serif;
+  text-align: center;
 }
 
 .accordion-desc {
@@ -47,6 +48,7 @@ body {
   padding: 20px;
   line-height: 1.5;
   font-size: 1.2rem;
+  font-weight: 300;
 }
 
 .subtitle {
