@@ -1,28 +1,14 @@
 function password() {
-  const passElement = document.querySelector(".password");
-  const username = document.querySelector(".username");
-  const icon = document.querySelector(".fa-eye");
-  const toggleIcon = document.querySelector(".toggle");
+  const passwordInput = document.querySelector("#password");
+  const eyeClick = document.querySelector(".eye");
+  const eyeChange = document.getElementById("eyes");
 
-  toggleIcon.addEventListener("click", passVisible);
-
-  function iconChange() {
-    if (icon.classList.contains("fa-eye")) {
-      icon.classList.replace("fa-eye", "fa-eye-slash");
+  eyeClick.addEventListener("click", () => {
+    if (passwordInput.type === "password") {
+      passwordInput.setAttribute("type", "text");
     } else {
-      icon.classList.replace("fa-eye-slash", "fa-eye");
+      passwordInput.setAttribute("type", "password");
     }
-  }
+  });
 }
-
-function passVisible() {
-  const passElement = document.querySelector(".password");
-  if (passElement.type === "password") {
-    passElement.type === "text";
-    console.log(passElement.type);
-  } else {
-    passElement.type = "password";
-  }
-}
-passVisible();
 export default password;

@@ -11,28 +11,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Vite App</title>
   </head>
   <body>
     <div class="container">
-      <label for="username">Username</label>
-      <input type="text" class="username" />
+      <div class="content">
+        <label for="username">username</label>
+        <input type="text" class="inputText" />
+        <i class="fa-solid fa-user"></i>
+        <br />
 
-      <label for="password" class="password">Password</label>
-      <div class="btn">
-        <input
-          type="password"
-          name="password"
-          id="pass"
-          minlength="8"
-          required
-        />
-        <div class="toggle">
-          <button class="icon__button">
-            <i class="fa fa-eye" aria-hidden="true"></i>
-          </button>
-        </div>
+        <label for="password">Password</label>
+
+        <input type="password" name="password" id="password" />
+
+        <span class="eye"><i class="fa-regular fa-eye" id="eyes"></i></span>
       </div>
+      <button>signIn</button>
     </div>
     <script type="module" src="./src/main.js"></script>
   </body>
