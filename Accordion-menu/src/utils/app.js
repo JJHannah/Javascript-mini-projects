@@ -8,11 +8,6 @@ const menu = () => {
     });
   });
   // function removeOpenSubtitle() {
-  //   openSubtitles.forEach((openSubtitle) => {
-  //     openSubtitle.classList.remove("is-open");
-  //   });
-  // }
-  // removeOpenSubtitle();
 };
 
 export default menu;
