@@ -7,7 +7,6 @@ const menu = () => {
       subtitle.classList.toggle("is-open");
     });
   });
-  // function removeOpenSubtitle() {
 };
 
 export default menu;
